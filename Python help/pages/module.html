@@ -1,0 +1,452 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Рук-во по Python3</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/169aa652e8.js" crossorigin="anonymous"></script>
+</head>
+
+<body style="background: rgb(22, 125, 209);">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark ">
+        <div class="container-fluid ">
+            <a class="navbar-brand me-auto" href="../index.html"><i class="fas fa-caret-square-left fa-2x"></i></a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu_modul">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu_modul">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="#mod_random">Модуль random</a>
+                    <a class="nav-link" href="#mod_re">Модуль re</a>
+                    <a class="nav-link" href="#mod_xlrd">Модуль xlrd</a>
+                    <a class="nav-link" href="#mod_matplotlib">Модуль matplotlib</a>
+                    <a class="nav-link" href="#mod_sql">Модуль sqlite3</a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4" id="mod_random">
+        <h4 class="text-warning text-center">Модуль Random</h4>
+        <p class="fs-5 text-center">Этот модуль предоставляет функции для генерации случайных чисел, букв и случайного
+            выбора
+            элементов последовательности (списка, строки и т.д.).
+        </p>
+        <div class="accordion mt-4 w-75">
+            <div class="accordion-item bg-warning text-dark">
+                <h4 class="accordion-header" id="random_1">
+                    <button class="accordion-button collapsed bg-dark text-light" data-bs-toggle="collapse"
+                        data-bs-target="#modul_1">
+                        Функция randint()
+                    </button>
+                </h4>
+                <div id="modul_1" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <p>Функция <strong>randint()</strong> принимает два обязательных аргумента
+                            <strong>a</strong> и <strong>b</strong> и возвращает случайное целое число
+                            из отрезка [a;b]. Левая и правая граница a и b включаются в диапазон
+                            генерируемых случайных чисел.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item bg-warning text-dark">
+                <h4 class="accordion-header" id="random_2">
+                    <button class="accordion-button collapsed bg-dark text-light" data-bs-toggle="collapse"
+                        data-bs-target="#modul_2">
+                        Функция randrange()
+                    </button>
+                </h4>
+                <div id="modul_2" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <p>Функция <strong>randrange()</strong> принимает такие же аргументы, что и
+                            функция <strong>range()</strong>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item bg-warning text-dark">
+                <h4 class="accordion-header" id="random_3">
+                    <button class="accordion-button collapsed bg-dark text-light" data-bs-toggle="collapse"
+                        data-bs-target="#modul_3">
+                        Функция random()
+                    </button>
+                </h4>
+                <div id="modul_3" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <p>Функция <strong>random()</strong> возвращает случайное число с плавающей точкой
+                            (вещественное число). В функцию random() никаких аргументов не передается.
+                            Функция random() возвращает случайное число с плавающей точкой в <strong>диапазоне
+                                от 0.00.0 до 1.01.0 (исключая 1.01.0).</strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item bg-warning text-dark">
+                <h4 class="accordion-header" id="random_4">
+                    <button class="accordion-button collapsed bg-dark text-light" data-bs-toggle="collapse"
+                        data-bs-target="#modul_4">
+                        Функция uniform()
+                    </button>
+                </h4>
+                <div id="modul_4" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <p>Функция <strong>uniform()</strong> тоже возвращает случайное число с плавающей
+                            точкой, но при этом она позволяет задавать диапазон для отбора значений.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item bg-warning text-dark">
+                <h4 class="accordion-header" id="random_5">
+                    <button class="accordion-button collapsed bg-dark text-light" data-bs-toggle="collapse"
+                        data-bs-target="#modul_5">
+                        Функция seed()
+                    </button>
+                </h4>
+                <div id="modul_5" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <p>Функция <strong>seed()</strong> в Python используется для инициализации случайных
+                            чисел. По умолчанию генератор случайных чисел использует текущее системное время.
+                            Если вы дважды используете одно и то же начальное значение, вы получите один
+                            и тот же результат, что означает случайное число дважды.
+                        </p>
+                        <p><strong class="text-dark">Пример:</strong>
+                            <br>import random
+                            <br># здесь выставляется определенное значение
+                            <br>random.seed(10)
+                            <br>print(random.randit(1,20))
+                            <br># 6
+                            <br># при каждой последующей генерации, на выходе будет одно и то же значение
+                            <br>print(random.randit(1,20))
+                            <br># 6
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item bg-warning text-dark">
+                <h4 class="accordion-header" id="random_6">
+                    <button class="accordion-button collapsed bg-dark text-light" data-bs-toggle="collapse"
+                        data-bs-target="#modul_6">
+                        Функция shuffle()
+                    </button>
+                </h4>
+                <div id="modul_6" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <p>Функция <strong>shuffle()</strong> принимает <strong>список</strong> в качестве
+                            обязательного аргумента и перемешивает его случайным образом.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item bg-warning text-dark">
+                <h4 class="accordion-header" id="random_7">
+                    <button class="accordion-button collapsed bg-dark text-light" data-bs-toggle="collapse"
+                        data-bs-target="#modul_7">
+                        Функция choice()
+                    </button>
+                </h4>
+                <div id="modul_7" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <p>Функция <strong>choice()</strong> принимает <strong>список (строку)</strong> в
+                            качестве обязательного аргумента и возвращает один случайный элемент из
+                            переданного списка (строки).
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item bg-warning text-dark">
+                <h4 class="accordion-header" id="random_8">
+                    <button class="accordion-button collapsed bg-dark text-light" data-bs-toggle="collapse"
+                        data-bs-target="#modul_8">
+                        Функция sample()
+                    </button>
+                </h4>
+                <div id="modul_8" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <p>Функция <strong>sample()</strong> принимает два обязательных аргумента:
+                            <strong>список (строку)</strong> и <strong>количество случайных элементов</strong>,
+                            а возвращает список случайных элементов в указанном количестве.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="mod_re">
+        <h4 class="text-warning text-center mt-4 mb-4">Модуль Re <a class="text-dark" href="#" onclick="scroll(0,0);return true"><i
+            class="fas fa-arrow-alt-circle-up fa-1x"></i></a></h4>
+        <p class="fs-5 text-center">
+            Модуль re предоставляет полную поддержку регулярных выражений. Регулярные
+            выражения — специальная последовательность символов, которая помогает сопоставлять
+            или находить строки с использованием специализированного синтаксиса, содержащегося в шаблоне.
+        </p>
+        <p class="fs-6 text-center">
+            В таблицах ниже описаны все символы и комбинации символов для регулярных выражений,
+            которые доступны в Python:
+        </p>
+        <table class="table table-dark table-striped">
+            <thead>
+                <th>Оператор</th>
+                <th>Описание</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>.</strong></td>
+                    <td>Один любой символ, кроме новой строки \n.</td>
+                </tr>
+                <tr>
+                    <td><strong>?</strong></td>
+                    <td>0 или 1 вхождение шаблона слева</td>
+                </tr>
+                <tr>
+                    <td><strong>+</strong></td>
+                    <td>1 и более вхождений шаблона слева</td>
+                </tr>
+                <tr>
+                    <td><strong>*</strong></td>
+                    <td>0 и более вхождений шаблона слева</td>
+                </tr>
+                <tr>
+                    <td><strong>\w</strong></td>
+                    <td>Любая цифра или буква (\W — все, кроме буквы или цифры)</td>
+                </tr>
+                <tr>
+                    <td><strong>\d</strong></td>
+                    <td>Любая цифра [0-9] (\D — все, кроме цифры)</td>
+                </tr>
+                <tr>
+                    <td><strong>\s</strong></td>
+                    <td>Любой пробельный символ (\S — любой непробельный символ)</td>
+                </tr>
+                <tr>
+                    <td><strong>\b</strong></td>
+                    <td>Граница слова</td>
+                </tr>
+                <tr>
+                    <td><strong>[..]</strong></td>
+                    <td>Один из символов в скобках ([^..] — любой символ, кроме тех, что в скобках)</td>
+                </tr>
+                <tr>
+                    <td><strong>\</strong></td>
+                    <td>Экранирование специальных символов (\. означает точку или \+ — знак «плюс»)</td>
+                </tr>
+                <tr>
+                    <td><strong>^ и $</strong></td>
+                    <td>Начало и конец строки соответственно</td>
+                </tr>
+                <tr>
+                    <td><strong>{n,m}</strong></td>
+                    <td>От n до m вхождений ({,m} — от 0 до m)</td>
+                </tr>
+                <tr>
+                    <td><strong>a|b</strong></td>
+                    <td>Соответствует a или b</td>
+                </tr>
+                <tr>
+                    <td><strong>()</strong></td>
+                    <td>Группирует выражение и возвращает найденный текст</td>
+                </tr>
+                <tr>
+                    <td><strong>\t, \n, \r </strong></td>
+                    <td>Символ табуляции, новой строки и возврата каретки соответственно</td>
+            </tbody>
+        </table>
+        <h5 class="text-center"><strong>Функции модуля Re:</strong></h5>
+        <p class="fs-5 text-center"><strong>re.compile(шаблон, repl, текст)</strong>- собирает регулярное
+            выражение в отдельный объект, который может быть использован для поиска. Это также избавляет
+            от переписывания одного и того же выражения. Фраза <strong>span=(3, 12)</strong> - показывает, где
+            именно в строке программе удалось найти шаблон поиска.
+        </p>
+        <div class="row">
+            <div class="col-md-6">
+                <p><strong>re.match(pattern, string).</strong> Эта функция ищет по заданному шаблону
+                    в начале строки.
+                </p>
+                <img src="images/Modul images/match.png" class="img-fluid rounded">
+            </div>
+            <div class="col-md-6">
+                <p><strong>re.search(шаблон, текст).</strong> Эта функция похожа на <strong>match()</strong>,
+                    но ищет не только в начале строки.
+                </p>
+                <img src="images/Modul images/search.png" class="img-fluid rounded">
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-6">
+                <p><strong>re.findall(шаблон, текст).</strong> Эта функция возвращает <strong>список</strong>
+                    всех найденных совпадений. У метода findall() нет ограничений на поиск в начале или
+                    конце строки.
+                </p>
+                <img src="images/Modul images/findall.png" class="img-fluid rounded">
+            </div>
+            <div class="col-md-6">
+                <p><strong>re.split(шаблон, текст, [maxsplit=0]).</strong> Эта функция разделяет строку
+                    по заданному шаблону.
+                </p>
+                <img src="images/Modul images/split.png" class="img-fluid rounded">
+            </div>
+        </div>
+        <div class="text-center">
+            <p><strong>re.sub(шаблон, repl, текст).</strong> Эта функция ищет шаблон в строке и заменяет
+                его на указанную подстроку.
+            </p>
+            <img src="images/Modul images/sub.png" class="img-fluid rounded">
+        </div>
+    </div>
+    <div class="container" id="mod_xlrd">
+        <h4 class="text-warning text-center mt-4 mb-4">Модуль XLRD <a class="text-dark" href="#" onclick="scroll(0,0);return true"><i
+            class="fas fa-arrow-alt-circle-up fa-1x"></i></a></h4>
+        <p class="fs-5 text-center">
+            Это библиотека для чтения данных и форматирования информации из файлов Excel в историческом 
+            формате xls. Если при импорте модуля и запуске чтения книги, программа выдает ошибку нужно 
+            установить другую версию модуля: <strong>pip install xlrd==1.2.0</strong>.
+            <br> Для того, чтобы открыть файл с электронной таблицей, вводится команда: 
+            <strong>переменная = xlrd.open_workbook(Путь к файлу)</strong>
+        </p>
+        <div class="container text-start mb-3">
+            <p>
+                <strong>Пример кода для просмотра кол-ва страниц в электронной таблице:</strong>
+            </p>
+            <img src="images/Modul images/xlrd1.png" class="img-fluid rounded">
+        </div>  
+        <div class="container text-end mb-3">
+            <p>
+                <strong>Пример кода для просмотра названия страниц в электронной таблице:</strong>
+            </p>
+            <img src="images/Modul images/xlrd2.png" class="img-fluid rounded">
+        </div> 
+        <div class="container text-start mb-3">
+            <p>
+                <strong>Пример кода для просмотра названия страницы, кол-ва колонок и кол-во столбцов 
+                    в электронной таблице:</strong>
+            </p>
+            <img src="images/Modul images/xlrd3.png" class="img-fluid rounded">
+        </div> 
+        <div class="container text-end mb-3">
+            <p>
+                <strong>Пример кода для просмотра значения в заданной ячейке:</strong>
+            </p>
+            <img src="images/Modul images/xlrd4.png" class="img-fluid rounded">
+        </div> 
+        <div class="container text-start mb-3">
+            <p>
+                <strong>Пример кода для просмотра одного из столбцов в электронной таблице:</strong>
+            </p>
+            <img src="images/Modul images/xlrd5.png" class="img-fluid rounded">
+        </div> 
+        <div class="container text-end mb-3">
+            <p>
+                <strong>Пример кода для просмотра заданной строки в заданной ячейке:</strong>
+            </p>
+            <img src="images/Modul images/xlrd6.png" class="img-fluid rounded">
+        </div>
+        <div class="container text-start mb-3">
+            <p>
+                <strong>Пример кода для просмотра содержимого всей страницы в электронной таблице:</strong>
+            </p>
+            <img src="images/Modul images/xlrd7.png" class="img-fluid rounded">
+        </div> 
+    </div>
+    <div class="container" id="mod_matplotlib">
+        <h4 class="text-warning text-center">Модуль Matplotlib.pyplot <a class="text-dark" href="#" onclick="scroll(0,0);return true"><i
+            class="fas fa-arrow-alt-circle-up fa-1x"></i></a></h4>
+        <p class="fs-5 text-center">
+            Этот модуль позволяет создавать высококачественные линейные графики, графики рассеяния, 
+            гистограммы, гистограммы и многое другое.
+        </p>
+        <h4 class="text-center">Примеры построения графиков:</h4>
+        <div class="row mt-4">
+            <div class="col-md-6 mb-4">
+                <img src="images/Modul images/cosx.png" class="img-fluid rounded">
+            </div>
+            <div class="col-md-6 mb-4">
+                <img src="images/Modul images/cosx_plot.png" class="img-fluid rounded">
+                <p class="text-warning position-absolute"><strong>Пример графика cosx</strong></p> 
+            </div>            
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-6 mb-4">
+                <img src="images/Modul images/plot_2.png" class="img-fluid rounded">
+            </div>
+            <div class="col-md-6 mb-4">
+                <img src="images/Modul images/гист.png" class="img-fluid rounded">
+                <p class="text-warning position-absolute"><strong>Пример графика гистограммы</strong></p> 
+            </div>            
+        </div>
+    </div>   
+    <div class="container mt-5" id="mod_sql">
+        <h4 class="text-warning text-center">Модуль SQLite3 <a class="text-dark" href="#" onclick="scroll(0,0);return true"><i
+            class="fas fa-arrow-alt-circle-up fa-1x"></i></a></h4>
+        <p class="fs-5 text-center">
+            SQLite3 – это C библиотека, реализующая легковесную дисковую базу данных (БД), 
+            не требующую отдельного серверного процесса и позволяющую получить доступ к БД 
+            с использованием языка запросов SQL. Чтобы воспользоваться SQLite3 в Python необходимо 
+            импортировать модуль sqlite3, а затем создать объект подключения к БД. Объект подключения 
+            создается с помощью метода connect():
+            <br><strong>переменная = sqlite3.connect('путь к базе данных')</strong>.
+        </p>
+        <h5 class="text-center"><strong>Создание таблицы в БД</strong></h5>
+        <p class="text-center fs-5">
+            После создания объекта соединения с базой данных нужно создать объект <strong>cursor</strong>.
+             Он позволяет делать SQL-запросы к базе. Используем переменную <strong>access</strong> для 
+            хранения объекта. Функция <strong>execute</strong> отвечает за SQL-запрос. Команда 
+            <strong>IF NOT EXISTS</strong> поможет при попытке повторного подключения к базе данных. 
+            Запрос проверит, существует ли таблица. Если да — проверит, ничего ли не поменялось. Дальше
+            создаем колонки в БД и их тип значения. В конце сохраняем изменения с помощью функции 
+            <strong>commit</strong>.
+        </p>
+        <img src="images/Modul images/sql1.png" class="img-fluid rounded mx-auto d-block mb-4">
+        <h5 class="text-center mt-4"><strong>Добавление данных в БД</strong></h5>
+        <p class="text-center fs-5">
+            По аналогии с запросом для создания таблиц для добавления данных также нужно использовать 
+            объект <strong>cursor</strong>.
+        </p>
+        <img src="images/Modul images/sql2.png" class="img-fluid rounded mx-auto d-block mb-4">
+        <p class="text-center fs-5">
+            В Python часто приходится иметь дело с переменными, в которых хранятся значения. Например, 
+            это может быть кортеж <strong>(data)</strong>. Если его нужно загрузить в базу данных, 
+            тогда подойдет инструкция ниже:
+        </p>
+        <img src="images/Modul images/sql3.png" class="img-fluid rounded mx-auto d-block mb-4">
+        <p class="text-center fs-5">
+            Важно заметить, что SQLite ожидает получить значения в формате кортежа. Однако в переменной 
+            может быть и <strong>список</strong> с набором кортежей. Таким образом можно добавить 
+            несколько пользователей. Но нужно использовать функцию <strong>executemany</strong> вместо 
+            обычной execute:
+        </p>
+        <h5 class="text-center mb-4"><strong>Получение данных с SQLite в Python</strong></h5>
+        <p class="text-center fs-5">
+            Для получения данных из БД, мы будем использовать функцию <strong>fetchmany()</strong>. 
+            Вывод кол-ва запросов из БД указывается в скобках функции <strong>fetchmany('кол-во запросов')</strong>
+        </p>
+        <img src="images/Modul images/sql4.png" class="img-fluid rounded mx-auto d-block mb-4">
+        <p class="text-center fs-5">
+           Чтобы вывести все данные из БД используется функция <strong>fetchall()</strong>.
+        </p>
+        <img src="images/Modul images/sql5.png" class="img-fluid rounded mx-auto d-block mb-4">
+        <h5 class="text-center mb-4"><strong>Поиск и удаление данных</strong></h5>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="images/Modul images/sql6.png" class="img-fluid rounded mx-auto d-block mb-4">
+            </div>
+            <div class="col-md-6">
+                <img src="images/Modul images/sql7.png" class="img-fluid rounded mx-auto d-block mb-4">
+            </div>
+        </div>
+        <p class="text-center fs-5">
+            Для работы в БД без использования языка программирования Python можно использовать программу
+            <strong>SQLiteStudio</strong>.
+        </p>
+     </div>   
+    <div class="container-fluid text-center mt-5 mb-5">
+        <a class="text-dark" href="#" onclick="scroll(0,0);return true"><i
+                class="fas fa-arrow-alt-circle-up fa-3x"></i></a>
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

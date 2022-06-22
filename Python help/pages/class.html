@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Рук-во по Python3</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/169aa652e8.js" crossorigin="anonymous"></script>
+</head>
+
+<body style="background: rgb(22, 125, 209);">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark ">
+        <div class="container-fluid ">
+            <div class="navbar-nav me-auto">
+                <a class="nav-link" href="../index.html"><i class="fas fa-caret-square-left fa-2x"></i></a>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-8 text-center align-self-center">
+                <p>Класс описывает пользовательский тип данных, на основе которого в программе создаются
+                    однородные объекты. Как правило, они могут включать в себя некие свойства и методы,
+                    позволяющие реализовать их текущее состояние, а также поведение.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <p class="border-2 rounded text-center bg-dark text-light">
+                    class Example()<br>
+                    pass<br>
+                    elem = Example()
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 text-center align-self-center">
+                <p>Определив новый класс, можно создавать сколько угодно объектов на его основе. 
+                    Как уже было сказано выше, такая структура данных может включать в себя некие 
+                    свойства, то есть переменные, которыми будет наделен каждый экземпляр класса.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <p class="border-2 rounded text-center bg-dark text-light">
+                    class Data:
+                    <br>word = "Python"
+                    <br>number = 3
+                    <br>data = Data()
+                    <br>print(data.word + " " + str(data.number))
+                    <br>Python 3
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <h4 class="text-start text-warning">Аргумент self</h4>
+        <div class="row">
+            <div class="col-md-7 align-self-center fs-5">
+                <p>Единственным атрибутом для метода из класса является ключевое слово
+                    <strong>self</strong>. Помещать его нужно в каждую функцию чтобы иметь возможность 
+                    вызвать ее на текущем объекте. Также с помощью этого ключевого слова можно 
+                    получать доступ к полям класса в описываемом методе. Self таким образом заменяет 
+                    идентификатор объекта.
+                </p>
+            </div>
+            <div class="col-md-5">               
+                    <img src="images/Class images/Self.png" class="img-fluid img-thumbnail">             
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <h4 class="text-end text-warning">Конструктор</h4>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="images/Class images/Init.png" class="img-fluid img-thumbnail">
+            </div>
+            <div class="col-md-8 align-self-center fs-5">
+                <p>Изменить внутренние данные любого объекта можно с помощью оператора доступа
+                    к свойствам объекта. Но существует возможность заранее определить поля для
+                    объекта, задав их во время его создания. Для этой цели в ООП используется
+                    конструктор, принимающий необходимые параметры.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <h4 class="text-start text-warning">Наследование</h4>
+        <div class="row">
+            <div class="col-md-8 align-self-center fs-5">
+                <p>При наследовании классов в Python обязательно следует соблюдать одно условие:
+                    класс-наследник должен представлять собой более частный случай класса-родителя.
+                    В следующем примере показывается как класс <strong>Person</strong> 
+                    наследуется классом <strong>Age</strong>.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <img src="images/Class images/наследование.png" class="img-fluid img-thumbnail">
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <h4 class="text-end text-warning">Множественное наследование</h4>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="images/Class images/множ. наслед.png" class="img-fluid img-thumbnail">
+            </div>
+            <div class="col-md-8 align-self-center fs-5">
+                <p>Наследовать можно не только один класс, но и несколько одновременно, обретая 
+                    тем самым их свойства и методы. В данном примере класс <strong>Man</strong> 
+                    выступает в роли подкласса для <strong>Name</strong> и <strong>Age</strong>, 
+                    поскольку может являться и тем, и другим. От класса Name берет метод 
+                    <strong>person_name</strong>, в то время как Age дает доступ к методу 
+                    <strong>person_age</strong>. В свою очередь, оба родительских 
+                    класса унаследовали поле name и age от <strong>Person</strong>. 
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <h4 class="text-start text-warning">Статические методы</h4>
+        <div class="row">
+            <div class="col-md-8 align-self-center fs-5">
+                <p>К примеру, есть определенная структура Math, содержащая в себе методы для 
+                    арифметических вычислений. Применять ее функции можно не создавая объект, если 
+                    они помечены, как статические. Для того, чтобы отметить в классе метод как 
+                    статический, в Python используется декоратор <strong>@staticmethod</strong>.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <img src="images/Class images/staticmethod.png" class="img-fluid img-thumbnail">
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <h4 class="text-end text-warning">Ограничение доступа</h4>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="images/Class images/get_and_set.png" class="img-fluid img-thumbnail">
+            </div>
+            <div class="col-md-8 align-self-center fs-5">
+                <p>В такой ситуации помогает еще одна особенность ООП под названием инкапсуляция. 
+                    Она предписывает применение приватных свойств класса, к которым отсутствует доступ 
+                    за его пределами. Для управления содержимым объекта необходимо использовать 
+                    специальные методы, именуемые <strong>getter</strong> (возвращает значение) и
+                    <strong>setter</strong> (устанавливает значение).
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid text-center mt-5 mb-5">
+        <a class="text-dark" href="#" onclick="scroll(0,0);return true"><i
+                class="fas fa-arrow-alt-circle-up fa-3x"></i></a>
+    </div>
+
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

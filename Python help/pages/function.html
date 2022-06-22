@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Рук-во по Python3</title>
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<script src="https://kit.fontawesome.com/169aa652e8.js" crossorigin="anonymous"></script>
+</head>
+<body style="background: rgb(22, 125, 209);"> 
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark ">
+        <div class="container-fluid ">
+            <div class="navbar-nav me-auto">
+                <a class="nav-link" href="../index.html"><i class="fas fa-caret-square-left fa-2x"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+    <h4 class="text-center text-warning">Объявление и вызов функции</h4>
+    <div class="row">
+        <div class="col-md-6 flex-column">         
+            <p>Итак, <strong>функция</strong> – отдельная, функционально независимая часть программы, 
+                выполняющая определенную задачу. Функции объявляются с помощью ключевого 
+                слова <strong>def</strong> (от слова define – определять). За ключевым 
+                словом def следуют название функции, круглые скобки (), и двоеточие :.
+            </p>
+            <img src="images/Function images/fun1.png" class="img-fluid rounded">
+        </div>
+        <div class="col-md-6 flex-column">
+            <p>Первая строка объявления функции называется <strong>заголовком функции</strong>.
+                Со следующей строки идет блок кода – <strong>тело функции</strong>. Это набор инструкций, 
+                составляющих одно целое и выполняющихся каждый раз, когда вызывается функция. 
+                Ниже приведенный фрагмент кода определяет функцию с именем <strong>show_message()</strong>.
+                Тело ее состоит из одной инструкции, и вызов приведет к их исполнению. Для 
+                вызова функции пишут ее название и круглые скобки.
+            </p>
+            <img src="images/Function images/fun2.png" class="img-fluid rounded">
+        </div>
+    </div>
+    </div>
+    <div class="container mt-4">
+        <h4 class="text-center text-warning">Параметры и аргументы функции</h4>
+        <div class="flex-column">
+            <p>
+                <strong>Аргумент</strong> – это любая порция данных, которая передается в функцию, 
+                когда функция вызывается. <strong>Параметр</strong> – это переменная, которая получает
+                аргумент, переданный в функцию.  
+            </p>
+            <img src="images/Function images/fun3.png" class="img-fluid rounded mx-auto d-block">
+        </div>
+    </div>
+    <div class="container mt-4">
+        <h4 class="text-center text-warning">Локальные и глобальные переменные</h4>
+        <div class="flex-column">
+            <p><strong>Локальными</strong> называются переменные, объявленные внутри функции и доступные 
+                только ей самой. Программный код за пределами функции к ним доступа не имеет. 
+                <strong>Глобальными</strong> называются переменные, объявленные в основной программе 
+                и доступные как программе, так и всем ее функциям.<br> Рассмотрим функцию 
+                <strong>birds_russia()</strong>, которая выводит информацию о количестве птиц, обитающих 
+                в России. В теле функции мы создаем переменную <strong>birds</strong>, которой 
+                присваивается значение, равное 500. Такая переменная является локальной для функции 
+                birds_russia(). Всякий раз, когда переменной внутри функции присваивается значение, в 
+                результате создается локальная переменная. Она принадлежит функции, в которой создается, 
+                и к ней получает доступ только программный код этой функции. Термин <strong>локальная
+                </strong> указывает на то, что переменная может использоваться лишь в этом месте — внутри
+                функции, в которой создается. Если программный код одной функции попытается обратиться 
+                к локальной переменной, принадлежащей другой функции, произойдет ошибка.
+            </p> 
+            <img src="images/Function images/fun4.png" class="img-fluid rounded mx-auto d-block">  
+        </div>
+    </div>
+    <div class="container mt-4">
+        <h4 class="text-center text-warning">Лямбда-функции</h4>
+        <div class="flex-column">
+            <p><strong>Лябмда-выражения</strong> — это особый синтаксис в Python, необходимый 
+                для создания анонимных функций. Я назову синтаксис лямбда как лямбда-выражение, а получаемую 
+                функцию — лямбда-функцию. Лямбда-выражения в Python позволяют функции быть созданной 
+                и переданной (зачастую другой функции) в одной строчке кода. Лямбда-выражения — это особый 
+                синтаксис для создания функций. Они могут иметь только один оператор и автоматически 
+                возвращают его результат. Как правило, lambda-выражения используются при вызове 
+                функций (или классов), которые принимают функцию в качестве аргумента. Используется 
+                следующий синтаксис для объявления лямбда – функции:
+            </p>
+            <img src="images/Function images/fun5.png" class="img-fluid rounded mx-auto d-block">  
+        </div>
+    </div>
+
+    <div class="container-fluid text-center mt-5 mb-5">
+        <a class="text-dark" href="#" onclick="scroll(0,0);return true"><i class="fas fa-arrow-alt-circle-up fa-3x"></i></a>
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

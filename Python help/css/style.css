@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body,html{
+    overflow-x: hidden;
+    background: rgb(22, 125, 209);
+}
+.animate__animated.animate__bounce {
+    --animate-duration: 3s;
+}
+#checkbox-menu, .toggle{
+    display: none;
+}
+header{
+    background-color: rgb(22, 125, 209);
+}
+	 
+.menu{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.menu li a{
+    text-decoration: none;
+    color: rgb(172, 175, 9);
+    font-size: 20px;
+    text-shadow: 2px 2px black;
+}
+.menu li a:hover{
+    text-shadow: none;
+}
+.logo{
+    padding-top: 5px;
+    margin-right: 150px;
+}
+.history{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 40px;
+    max-width: 90%;
+}
+.history_img{
+    margin-left: 10%;
+    padding-top: 40px;
+
+}
+.history_info{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: large; 
+    line-height: 1.5rem;
+
+}
+.history_info h2{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(172, 175, 11);
+    text-shadow: 2px 2px black;
+    text-align: center;  
+    padding-bottom: 20px;
+    margin-top: 80px;
+}
+footer{
+    margin-bottom: 0 auto;
+    text-align: end;
+    margin-top: 50px;
+}
+
+@media screen and (max-width:800px){
+    .toggle{
+        clear: both;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        color: rgb(172, 175, 9);
+        background: rgb(12, 75, 126);
+        text-shadow: 2px 2px black;
+    }
+    .toggle h4{
+        padding-top: 7px;
+        padding-left: 5px;
+    }
+    .toggle:hover{
+        text-shadow: none;
+    }
+    .logo{
+        display: none;
+    }
+    #checkbox-menu:checked + label .menu li{
+        opacity: 1;
+        visibility: visible;
+    }
+    #checkbox-menu:checked + label .menu{
+        height: 200px;
+    }
+    .menu{
+        flex-direction: column;
+        align-items: center;
+        height: 0;
+    }
+    .menu li{
+        opacity: 0;
+        visibility: hidden;
+    }
+    .history{
+        flex-direction: column;
+    }
+    .history_info{
+        padding-top: 20px;
+        max-width: 90%;
+    }
+    .history_info h2{
+        margin-top: 30px;
+    }
+}	
+ 			
+			
