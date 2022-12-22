@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class = "main">
+        <header>
+            <ul class = "main__menu">
+                <li class="main__menu__item logo">
+                    <img src="./assets/image/logo.png" alt="logo image">
+                </li>
+                <li class="main__menu__item"><a href="#">About</a></li>
+                <li class="main__menu__item"><a href="#">News</a></li>
+                <li class="main__menu__item"><a href="#">Music</a></li>
+                <li class="main__menu__item"><a href="#">Media</a></li>
+                <li class="main__menu__item"><a href="#">Tours</a></li>
+                <li class="main__menu__item"><a href="#">Contacts</a></li>
+            </ul>
+        </header>
+        <div class="main__content">
+            <div class="main__content__descr">
+                <h2 class="main__content__descr__title">New Single</h2>
+                <h2 class="main__content__descr__subtitle">War For Love</h2>
+            </div>
+                <audio id="main-player" src="./assets/music/Ed_Sheeran_-_Shape_of_You_47828367.mp3"></audio>
+                <div class="main__content__player"> 
+                    <button class = "play"><img src="./assets/icon/play.svg" alt="play icon"></button> 
+                    <button class = "pause"><img src="./assets/icon/pause.svg" alt="play icon"></button> 
+                    <input type = "range" value ="0" min ="0" max ="100" step = "1" id = "range-thumb" >
+                    <div class="main__content__player__timer">
+                        <span id="range-track">00 : 00</span> - <span id="end-track"></span>
+                    </div>
+                </div>
+        </div>
+    </section>
+    <section class = "news">
+        <div class="news__content">
+            <div class="news__content__item">
+                <img src="./assets/image/main-img-1.png" alt="news image 1">
+            </div>
+            <div class="news__content__item">
+                <img src="./assets/image/main-img-2.png" alt="news image 2">
+            </div>
+            <div class="news__content__item">
+                <img src="./assets/image/main-img-3.png" alt="news image 3">
+            </div>
+        </div>
+    </section>
+    <section class = "about">
+        <div class="about__content">
+            <div class="about__content__descr">
+                <div class="about__content__descr__title" >
+                    <img src="./assets/icon/bit.svg" alt="title icon">
+                    <h2>Bright Lights</h2>
+                </div> 
+                <p>
+                    Bright Lights is a multi-Grammy nominated singer, songwriter, DJ and record producer. She has written for numerous 
+                </p> 
+                <br>
+                <p>
+                    pop stars including Britney Spears, Justin Bieber, Usher and Beyoncé. Her catalog has amassed over 1 billion streams worldwide. More than 100 million of those streams can be attributed to her artist career and include such hits as Porter Robinson's "Language," 3LAU's "How You Love Me" and her own single "Runaway." She was also a featured vocalist on Zedd's #1 Clarity album. Her latest music video, "Put It Down," reached 1 million streams in the first week, releasing independently. Bright Lights is currently in the studio working on a self-produced album slated for release in 2020. 
+                </p> 
+                <div class="about__content__descr__alboms">
+                    <div class="about__content__descr__alboms__item">
+                        <img src="./assets/icon/albom.svg" alt="albom icon">
+                        <h4>Based in: Los Angeles</h4>
+                    </div>
+                    <div class="about__content__descr__alboms__item">
+                        <img src="./assets/icon/albom.svg" alt="albom icon">
+                        <h4>Founded in 2011</h4>
+                    </div>
+                    <div class="about__content__descr__alboms__item">
+                        <img src="./assets/icon/albom.svg" alt="albom icon">
+                        <h4>Genre: #DancePop</h4>
+                    </div>
+                    <div class="about__content__descr__alboms__item">
+                        <img src="./assets/icon/albom.svg" alt="albom icon">
+                        <h4>Label: 333 Recordings</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="about__content__foto">
+                <img src="./assets/image/dj-foto-car.png" alt="about block img">
+            </div>
+        </div>
+        <div class="about__awards">
+            <div class="about__awards__content">
+                <div class="about__awards__content__text">
+                    “In an age where mainstream music is designed to be as
+                    easily consumed as possible, listening to Bright Lights is
+                    refreshing, to say the least. Her sound is perfect for radio
+                    but complex enough to separate her from other pop newcomers.”
+                </div>
+                <div class="about__awards__content__divider"></div>
+                <div class="about__awards__content__link">
+                    <a href="#">PopULove.net</a>
+                </div>
+            </div>
+            <img src="./assets/image/dj-foto-mtv.png" alt="mtv awards img">
+        </div>
+    </section>
+    <section class = "tracks">
+        <div class="tracks__content">
+            <div class="tracks__content__img">
+                <img src="./assets/image/dj-foto-main.png" alt="track section img">
+            </div>
+            <div class="tracks__content__audio-list">
+                <div class="tracks__content__audio-list__header">
+                    <img src="./assets/icon/bit.svg" alt="title icon">
+                    <h2>Last tracks</h2>
+                </div>
+                <audio id="track-player" src="./assets/music/Ed_Sheeran_-_Shape_of_You_47828367.mp3"></audio>
+                <div class="tracks__content__audio-list__player"> 
+                    <button class = "play-track"><img src="./assets/icon/play.svg" alt="play icon"></button> 
+                    <button class = "pause-track"><img src="./assets/icon/pause.svg" alt="play icon"></button> 
+                    <input type = "range" value ="0" min ="0" max ="100" step = "1" id = "track-range-thumb">
+                    <div class="main__content__player__timer">
+                        <span id="range-track-sec">00 : 00</span> - <span id="end-track-sec"></span>
+                    </div>
+                </div>
+                <ul class="tracks__content__audio-list__list">
+                    <li class="tracks__content__audio-list__list__item item1">
+                        <a href="./assets/music/track list/GnuS_Cello_-_What_Ive_Done_Linking_Park_63454143.mp3" class = "track-item">3LAU, Bright Lights — How You Love Me</a>
+                    </li>
+                    <li class="tracks__content__audio-list__list__item item2">
+                        <a href="./assets/music/track list/Linkin_Park_-_Numb_47828673.mp3" class = "track-item">Bright Lights, Kaleena Zanders, Kandy — War For Love</a>
+                    </li>
+                    <li class="tracks__content__audio-list__list__item item3">
+                        <a href="./assets/music/track list/Linking_Park_-_Breaking_The_Habit_69944923.mp3" class = "track-item">Pink Is Punk, Benny Benassi, Bright Lights — Ghost</a>
+                    </li>
+                    <li class="tracks__content__audio-list__list__item item4">
+                        <a href="./assets/music/track list/Linking_Park_-_new_divic_74159814.mp3" class = "track-item">Hardwell, Dyro, Bright Lights — Never Say Goodbye</a>
+                    </li>
+                    <li class="tracks__content__audio-list__list__item item5">
+                        <a href="./assets/music/track list/Linking_Park_feat_Mellen_Gi_-_In_The_End_63236459.mp3" class = "track-item">Zeds Dead, Dirtyphonics, Bright Lights — Where Are You Now</a>
+                    </li>
+                    <li class="tracks__content__audio-list__list__item item6">
+                        <a href="./assets/music/track list/The_X-Ecutioners_f_Linking_Park_and_Static_-_Its_Going_DownFull_Version_63059250.mp3" class = "track-item">Zedd, Bright Lights — Follow You Down</a>
+                    </li>
+                </ul>
+                <div class="tracks__content__audio-list__footer">
+                    <h4>Follow me:</h4>
+                    <a href="#"><img src="./assets/icon/sportify.png" alt="sportify icon"></a>
+                    <a href="#"><img src="./assets/icon/itunes.png" alt="itunes icon"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class = "portfolio">
+        <div class="portfolio__content">
+            <div class="portfolio__content__item vertical-item">
+                <h4 class = "image-title">Lorem ipsum dolor sit amet.</h4>
+                <img src="./assets/image/portfolio/foto-1.png" alt="portfolio image">
+            </div>
+            <div class="portfolio__content__item">
+                <h4 class = "image-title">Lorem ipsum dolor sit amet.</h4>
+                <img src="./assets/image/portfolio/foto-2.png" alt="portfolio image">
+            </div>
+            <div class="portfolio__content__item">
+                <h4 class = "image-title">Lorem ipsum dolor sit amet.</h4>
+                <img src="./assets/image/portfolio/foto-3.png" alt="portfolio image">
+            </div>
+            <div class="portfolio__content__item vertical-item-2">
+                <h4 class = "image-title">Lorem ipsum dolor sit amet.</h4>
+                <img src="./assets/image/portfolio/foto-4.png" alt="portfolio image">
+            </div>
+            <div class="portfolio__content__item horizontal-item">
+                <h4 class = "image-title">Lorem ipsum dolor sit amet.</h4>
+                <img src="./assets/image/portfolio/foto-5.png" alt="portfolio image">
+            </div>
+        </div>
+    </section>
+    <section class = "alboms-slider">
+        <div class="alboms-slider__content">
+            <div class="prev">
+                <img src="./assets/image/slider-foto/prev-arow.png" alt="prev arow icon">
+            </div>
+            <div class="alboms-slider__content__slider">
+                <div class="alboms-slider__content__slider__item">
+                    <img src="./assets/image/slider-foto/img-1.png" alt="album-slider img">
+                </div>
+                <div class="alboms-slider__content__slider__item">
+                    <img src="./assets/image/slider-foto/img-2.png" alt="album-slider img">
+                </div>
+                <div class="alboms-slider__content__slider__item">
+                    <img src="./assets/image/slider-foto/img-3.png" alt="album-slider img">
+                </div>
+                <div class="alboms-slider__content__slider__item">
+                    <img src="./assets/image/slider-foto/img-4.png" alt="album-slider img">
+                </div>
+                <div class="alboms-slider__content__slider__item">
+                    <img src="./assets/image/slider-foto/img-5.png" alt="album-slider img">
+                </div>
+                <div class="alboms-slider__content__slider__item">
+                    <img src="./assets/image/slider-foto/img-6.png" alt="album-slider img">
+                </div>
+            </div>
+            <div class="next">
+                <img src="./assets/image/slider-foto/next-arow.png" alt="next arow icon">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer__content">
+            <div class="footer__content__logo">
+                <img src="./assets/image/logo.png" alt="logo img">
+            </div>
+            <div class="footer__content__manager">
+                <h2>Artist Management:</h2>
+                <span>Jake Henny</span>
+            </div>
+            <div class="footer__content__email">
+                <h2>EMAIL:</h2>
+                <span>jake@brightlightsofficial.com</span>
+            </div>
+            <div class="footer__content__social">
+                <img src="./assets/icon/social-footer/apple-icon.svg" alt="apple-icon">
+                <img src="./assets/icon/social-footer/sportify-icon.svg" alt="sportify-icon">
+                <img src="./assets/icon/social-footer/instagram-icon.svg" alt="instagram-icon">
+                <img src="./assets/icon/social-footer/youtoub-icon.svg" alt="youtoub-icon">
+                <img src="./assets/icon/social-footer/twiter-icon.svg" alt="twiter-icon">
+                <img src="./assets/icon/social-footer/facebook-icon.svg" alt="facebook-icon">
+            </div>
+            <h4 class = "footer__content__address">©  2020 DJ bright lights.</h4>
+        </div>
+    </footer>
+    <script src="./script.js"></script> 
+</body>
+</html>
