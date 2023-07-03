@@ -20,7 +20,7 @@
     "index.html": "./index.html",
     "main.e5a00687.css.map": "./static/css/main.e5a00687.css.map",
     "main.57d02d6f.js.map": "./static/js/main.57d02d6f.js.map",
-    ".htaccess": "./.htaccess"
+    "vercel.json": "./vercel.json"
   },
   "entrypoints": [
     "static/css/main.e5a00687.css",
