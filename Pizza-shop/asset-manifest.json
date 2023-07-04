@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/Pizza-shop/static/css/main.319c93d6.css",
+    "main.js": "/Pizza-shop/static/js/main.fff18f26.js",
+    "static/media/neapolitan.jpg": "/Pizza-shop/static/media/neapolitan.7da8432f8143122d5c3a.jpg",
+    "static/media/main-bg.jpg": "/Pizza-shop/static/media/main-bg.23c863e578658361ec0d.jpg",
+    "static/media/peperoni.jpeg": "/Pizza-shop/static/media/peperoni.d0bb2a5a0d34ca893bf7.jpeg",
+    "static/media/mimoza.webp": "/Pizza-shop/static/media/mimoza.f0219b2f40296d58d32e.webp",
+    "static/media/contacts-bg.jpg": "/Pizza-shop/static/media/contacts-bg.cf8e5fc4e14b94417de9.jpg",
+    "static/media/europen.webp": "/Pizza-shop/static/media/europen.0e38570c0a98b8d7391e.webp",
+    "static/media/mediter.webp": "/Pizza-shop/static/media/mediter.dfedb988f17aef839476.webp",
+    "static/media/capricious.webp": "/Pizza-shop/static/media/capricious.82a144d1de5ac9dd3a39.webp",
+    "static/media/cart-bg.jpg": "/Pizza-shop/static/media/cart-bg.e68ca345a033c652113f.jpg",
+    "static/media/margarita.webp": "/Pizza-shop/static/media/margarita.8ed4c77dc2395a321f8e.webp",
+    "static/media/capreze.webp": "/Pizza-shop/static/media/capreze.b5d0880f06e72c938f58.webp",
+    "static/media/regina.webp": "/Pizza-shop/static/media/regina.2af7f4239e4aa4b21882.webp",
+    "static/media/HelveticaNeueCyr-Roman.ttf": "/Pizza-shop/static/media/HelveticaNeueCyr-Roman.0ca719c710b1fbd7e02f.ttf",
+    "static/media/HelveticaNeueCyr-Bold.ttf": "/Pizza-shop/static/media/HelveticaNeueCyr-Bold.613e930355ab0b59fc48.ttf",
+    "static/media/HelveticaNeueCyr-Heavy.ttf": "/Pizza-shop/static/media/HelveticaNeueCyr-Heavy.c23733367c232fdea6f4.ttf",
+    "index.html": "/Pizza-shop/index.html",
+    "main.319c93d6.css.map": "/Pizza-shop/static/css/main.319c93d6.css.map",
+    "main.fff18f26.js.map": "/Pizza-shop/static/js/main.fff18f26.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.319c93d6.css",
+    "static/js/main.fff18f26.js"
+  ]
+}
